@@ -3,7 +3,7 @@ import Search from './components/Search'
 
 
 const App = () => {
-  const [searchTerm, setsearchTerm] = useState('')
+  const [searchTerm, setsearchTerm] = useState('Hello')
   return (
     <main>
       <div className='pattern'/>
@@ -14,7 +14,7 @@ const App = () => {
         </header>
 
         <Search searchTerm={searchTerm} setsearchTerm={setsearchTerm}/>
-          <h1 > {searchTerm}</h1>
+
       </div>
   </main>
   )
