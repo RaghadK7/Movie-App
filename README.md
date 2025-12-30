@@ -24,7 +24,7 @@
 
 ## Installation & Running Locally
 1. Clone the repository:
-```bash
+
 git clone https://github.com/yourusername/movie-explorer.git
 Navigate to the project folder:
 
@@ -46,22 +46,22 @@ Run the development server:
 npm run dev
 
 2. Navigate to the project folder:
-```bash
+
 cd movie-explorer
 
 3. Install dependencies:
-```bash
+
 npm install
 
 4. Create a .env file in the project root and add your TMDB API key:
-```bash
+
 VITE_TMDB_API_KEY=
 VITE_APPWRITE_PROJECT_ID=
 VITE_APPWRITE_DATABASE_ID=
 VITE_APPWRITE_COLLECTION_ID=
 
 5. Run the development server:
-```bash
+
 npm run dev
 
 
