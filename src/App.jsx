@@ -7,6 +7,7 @@ import Spinner from './components/Spinner'
 import MovieCard from './components/MovieCard'
 import MovieDetails from './components/MovieDetails'
 import { getTrendingMovies, updateSearchTermCount } from './appwrite'
+import Footer from './components/Footer'
 
 const API_BASE_URL = 'https://api.themoviedb.org/3'
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY
@@ -118,11 +119,15 @@ const App = () => {
                 )}
               </section>
             </div>
+             <Footer />
           </main>
+          
         }
       />
       <Route path="/movieDetails/:id" element={<MovieDetails />} />
+     
     </Routes>
+    
   )
 }
 
