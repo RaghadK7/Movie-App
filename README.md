@@ -1,18 +1,46 @@
-# Movie-App
+# Movie Explorer
 
-## React + Vite
+**Movie Explorer** is an interactive web application that allows users to search for movies, view trending titles, and explore detailed information about each film. Built with **React** and **Tailwind CSS**, it fetches data from the **TMDB API** and displays movie posters, descriptions, ratings, trailers, and cast in a clean, Netflix-inspired design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- **Search Movies:** Find any movie by name with real-time search using debouncing for performance.
+- **Trending Movies:** Displays the most popular movies currently trending.
+- **Movie Details Page:** Includes:
+  - Movie poster
+  - Overview/description
+  - TMDB rating
+  - Trailer video embedded from YouTube
+  - Main cast with photos and character names
+- **Responsive Design:** Works smoothly on mobile, tablet, and desktop.
+- **Clean UI:** Netflix-inspired layout with hero background and smooth styling.
+- **Navigation:** React Router for seamless page transitions.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Frontend:** React, Tailwind CSS
+- **API:** TMDB API
+- **Backend (optional):** Appwrite for storing search term counts
+- **Routing:** React Router
+- **Language:** JavaScript (ES6+)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation & Running Locally
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/movie-explorer.git
+Navigate to the project folder:
 
-### React Compiler
+cd movie-explorer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### Expanding the ESLint configuration
+Install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install
+
+
+Create a .env file in the project root and add your TMDB API key:
+
+VITE_TMDB_API_KEY=your_tmdb_api_key
+
+
+Run the development server:
+
+npm run dev
